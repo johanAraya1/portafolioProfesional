@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="img/favicon.png" rel="icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Johan</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">FORTALEZAS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portafolio" onclick="seleccionar()">PORTAFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+    <div class="check_btn">
+        <span class="es" style="color: #87CEEB;">Español</span>
+        <input type="checkbox" class="check">
+        <span class="en">English</span>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+
+
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/logo.png" alt="">
+            </div>
+            <h1>Johan Araya</h1>
+            <h2>Desarrollador de Software</h2>
+            <div class="redes">                
+                <a href="https://wa.me/50687120614"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://github.com/"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/johan-araya-gonz%C3%A1lez-10a58120a/"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Perfil profesional -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Perfil Profesional</h2>
+            <p><span>Hola, soy Johan Araya González.</span> Desarrollador de software especializado en diversas tecnologías a nivel de backend, utilizando tecnologías como PL/SQL, JAVA, C#, .NET y manejo de bases de datos relacionales y no relacionales.</p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Teléfono</strong>
+                            +506 87120614
+                        </li>
+                        <li>
+                            <strong>Correo electrónico</strong>
+                            johan.araya6@gmail.com
+                        </li>
+                        <li>
+                            <strong>Website</strong>
+                            www.example.com
+                        </li>
+                        <li>
+                            <strong>Dirección</strong>
+                            Cartago, Costa Rica
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>Desarrollador de Software</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Mision y Vision-->
+                <div class="col">                    
+                    <div class="acordeon">
+                        <input type="radio" name="acordeon" id="btn-acordeon1" class="btn-acordeon">
+                        <label for="btn-acordeon1">
+                            Misión
+                        </label>
+                        <div class="contenido-acordeon">
+                            <p>Diseñar, modernizar y optimizar soluciones tecnológicas a nivel backend  con un enfoque positivo a la empresa.</p>
+                        </div>
+                    </div>
+                    <div class="acordeon">
+                        <input type="radio" name="acordeon" id="btn-acordeon2" class="btn-acordeon">
+                        <label for="btn-acordeon2">
+                            Visión
+                        </label>
+                        <div class="contenido-acordeon">
+                            <p>Ser un profesional destacable en los proyectos desarrollados en la empresa logrando una buena interacción en el ambiente laboral y así maximizar el crecimiento mutuo.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button> <a href="CV_ES.pdf" download="Curriculum">
+                Descargar CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span></a>
+            </button>
+        </div>
+    </section>
+
+    <!-- SECCION Fortalezas -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Fortalezas</h2>
+            <div class="fila">
+                <!-- Fortalezas tecnicas -->
+                <div class="col">
+                    <h3>Habilidades técnicas</h3>
+                    <div class="skill">
+                        <span>Java</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span><img src="img/java.png" width="50px"> 
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span><img src="img/html-css-logo.png" width="40px"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>.Net</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span><img src="img/NET.png" width="40px"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>C#</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span><img src="img/c.png" width="40px"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>JavaScript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span><img src="img/js.png" width="40px"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Habilidades blandas</h3>
+                    <div class="skill">
+                        <span>Respeto</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span><img src="img/respeto.png" width="50px"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Solidaridad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span><img src="img/solidaridad.png" width="50px"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Responsabilidad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span><img src="img/responsabilidad.png" width="50px"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Compromiso</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span><img src="img/compromiso.png" width="40px"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span><img src="img/trabajoEquipo.png" width="50px"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Desarrollo de software</h4>
+                        <span class="lugar">Universidad Cenfotec</span>
+                        <span class="fecha">2024</span>
+                        <p>Bachillerato en Ingeniería de software</p>
+                        <div class="conector">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>                 
+                </div>
+                <div class="col derecha">
+                    <h3>Experiencia laboral</h3>
+                    <div class="item der">
+                        <h4>Desarrollador en Oracle</h4>
+                        <span class="lugar">Daytona Soft Corp.</span>
+                        <span class="fecha">2019 - 2020</span>
+                        <p>Crear y mantener software para empresas en el sector automotriz, ventas, estados financieros, nominas, entre otros, a nivel de bases de datos con Oracle y sus herramientas, forms, reports y Apex.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>     
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION portafolio -->
+    <section id="portafolio" class="portafolio">
+        <div class="contenido-seccion">
+            <h2>PORTAFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto" data-aos="fade-right">
+                    <img src="img/coworking.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Full stack Microsoft</h3>
+                        <p>Proyecto grupal web para la universidad Cenfotec, se realizó para reservar lugares o espacios para co-working, utilizando tencologias full stack Microsoft, .Net, C#, con base de datos relacional SQL Server con modelo MVC</p>
+                    </div>
+                </div>
+                <div class="proyecto" data-aos="fade-up">
+                    <img src="img/patrones.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Cenfomón</h3>
+                        <p>Proyecto grupal web para la universidad Cenfotec, se realizó un juego en 2D, llamado Cenfomón utilizando, patrones de diseño y tecnologías como Typescript y React</p>
+                    </div>
+                </div>
+                <div class="proyecto" data-aos="fade-left">
+                    <img src="img/ajedrez.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Ajedrez</h3>
+                        <p>Proyecto grupal en Oracle para la universidad Cenfotec, se realizó un juego de ajedrez por medio de consola utilizando la base de datos Oracle, con el lenguaje PL/SQL, realizando e implementando las reglas y fichas que necesita el juego.</p>
+                    </div>
+                </div>
+                <div class="proyecto" data-aos="fade-up-right">
+                    <img src="img/proyecto1.png" alt="">
+                    <div class="overlay">
+                        <h3>Página web</h3>
+                        <p>Proyecto grupal web para la universidad Cenfotec, se creó una aplicación web que contribuyerá con el reporte de incidentes, solicitud de ayuda y demás reportes en carretera para los conductores, se utilizaron tecnologías como HTML, CSS, Javascript, NodeJS, y base de datos no relacional con Mongo DB.</p>
+                    </div>
+                </div>
+                <div class="proyecto" data-aos="flip-left">
+                    <img src="img/subasta.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Subasta</h3>
+                        <p>Proyecto para la universidad Cenfotec, el mismo consistia en crear una aplicación web para realizar subastas, se utilizó la programación orientada a objetos, con el lenguaje Java, con base de datos SQL Server, y Java FX como capa de presentación  </p>
+                    </div>
+                </div>
+                <div class="proyecto" data-aos="zoom-out-right">
+                    <img src="img/sopa.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Sopa de letras</h3>
+                        <p>Proyecto grupal en Java para la universidad Cenfotec, utilizando los principios de programación se realiza un juego de sopas de letras en consola utilizando solo capa de presentación y capa de negocio.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <div class="col">
+                    <!-- Formulario -->
+                    <form action="https://formsubmit.co/johan.araya6@gmail.com" method="POST">
+                        
+                            <input type="text" name="name"placeholder="Tú Nombre">
+                            <input type="text" name="phoneNumber" placeholder="Número telefónico">
+                            <input type="email" name="email" placeholder="Dirección de correo">
+                            <input type="text" name="title"placeholder="Tema">
+                            <textarea name="subject" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                            
+                            <button type="submit">
+                                Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                                <span class="overlay"></span>
+                            </button>
+
+                            <input type="hidden" name="_next" value="http://127.0.0.1:5500">
+                            <input type="hidden" name="_captcha" value="false">
+                        
+                    </form>
+                </div>
+
+                <div class="col">
+                    <div class="container" style="width: 60%;">
+                        <lottie-player src="https://lottie.host/d50b641b-99f5-49fd-9fee-ab830ca66eb4/wl9bhrAfMW.json" autoplay loop>
+    
+                        </lottie-player>
+                    </div>
+                    <div class="anima1"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://wa.me/50687120614"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://github.com/"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/johan-araya-gonz%C3%A1lez-10a58120a/"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- libreria animacion web -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@0.3.0/dist/lottie-player.js"></script>
+
+    <!-- interactividad lottie usando eventos -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"></script>
+    
+
+    <script>
+        let anima1 = document.querySelector(".anima1");
+
+        let animation = bodymovin.loadAnimation({
+            container: anima1,
+            path:"https://lottie.host/42a76a46-e143-4036-bf50-1058349f6bfa/JSV5pimuac.json",
+            renderer:"svg",
+            loop:false,
+            autoplay: false,
+            name: "Johan",
+        });
+
+        anima1.addEventListener("mouseover", function(){
+            animation.playSegments([0,200], true);
+        });
+
+        anima1.addEventListener("mouseout", function(){
+            animation.playSegments([0], false);
+        });
+    </script>
+
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
