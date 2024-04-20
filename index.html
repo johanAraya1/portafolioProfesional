@@ -44,7 +44,7 @@
 
         <div class="contenido-banner">
             <div class="contenedor-img">
-                <img loading="lazy" src="img/logo.webp" alt="logo">
+                <img loading="lazy" src="img/logo.webp" data-src="img/logo.webp" alt="logo">
             </div>
             <h1>Johan Araya</h1>
             <h2>Desarrollador de Software</h2>
@@ -357,10 +357,10 @@
     <script defer src="https://unpkg.com/@lottiefiles/lottie-player@0.3.0/dist/lottie-player.js"></script>
 
     <!-- interactividad lottie usando eventos -->
-    <script  src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"></script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"></script>
     
 
-    <script>
+    <script async>
         let anima1 = document.querySelector(".anima1");
 
         let animation = bodymovin.loadAnimation({
@@ -381,7 +381,7 @@
         });
     </script>
 
-    <script >
+    <script defer>
         AOS.init();
     </script>
 </body>
