@@ -281,6 +281,14 @@ html{
     width: 100%;
 }
 /* SECCION S K I L L S */
+
+.img{
+    width: 50px;
+}
+
+.img2{
+    width: 40px;
+}
 .skills{
     background-color: #252A2E;
     color: #fff;
