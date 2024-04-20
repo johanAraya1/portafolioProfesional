@@ -353,14 +353,13 @@
 
     <script defer src="script.js"></script>
     <script async src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <!-- libreria animacion web -->
-    <script defer src="https://unpkg.com/@lottiefiles/lottie-player@0.3.0/dist/lottie-player.js"></script>
+
 
     <!-- interactividad lottie usando eventos -->
     <script  src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"></script>
     
 
-    <script >
+    <script defer>
         let anima1 = document.querySelector(".anima1");
 
         let animation = bodymovin.loadAnimation({
@@ -379,10 +378,12 @@
         anima1.addEventListener("mouseout", function(){
             animation.playSegments([0], false);
         });
-    </script>
 
-    <script >
         AOS.init();
     </script>
+
+        <!-- libreria animacion web -->
+        <script defer src="https://unpkg.com/@lottiefiles/lottie-player@0.3.0/dist/lottie-player.js"></script>
+ 
 </body>
 </html>
