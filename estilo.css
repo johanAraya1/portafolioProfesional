@@ -26,7 +26,7 @@ html{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 20px;
+    padding: 5px 20px;
 }
 .contenedor-header header .logo a{
     font-family: 'Righteous';
@@ -752,6 +752,9 @@ footer .arriba{
     }
 }
 @media screen and (max-width:700px){
+    .check_btn{
+        margin-top: 16%;
+    }
     .sobremi .fila{
         display: block;
     }
